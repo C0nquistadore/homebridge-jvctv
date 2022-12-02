@@ -1,0 +1,7 @@
+{
+	"name": "Homebridge JVCTV",
+	"build": { "dockerfile": "Dockerfile" },
+    "runArgs": [ "--name", "homebridge-jvctv" ],
+	"forwardPorts": [ 8581 ],
+	"postCreateCommand": "./.devcontainer/post-create-command.sh ${containerWorkspaceFolder}"
+}
