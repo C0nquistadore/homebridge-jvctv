@@ -3,5 +3,5 @@
 	"build": { "dockerfile": "Dockerfile" },
     "runArgs": [ "--name", "homebridge-jvctv" ],
 	"forwardPorts": [ 8581 ],
-	"postCreateCommand": "./.devcontainer/post-create-command.sh ${containerWorkspaceFolder}"
+	"postCreateCommand": "chmod +x ./.devcontainer/post-create-command.sh && ./.devcontainer/post-create-command.sh ${containerWorkspaceFolder}"
 }
