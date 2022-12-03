@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/typescript-node
+FROM mcr.microsoft.com/devcontainers/typescript-node:bullseye
 
 RUN npm install -g homebridge
 

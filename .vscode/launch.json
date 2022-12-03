@@ -7,6 +7,7 @@
             "request": "launch",
             "program": "/usr/local/share/npm-global/bin/homebridge",
             "args": "-D",
+            "preLaunchTask": "build",
             "skipFiles": [
                 "<node_internals>/**"
             ],
