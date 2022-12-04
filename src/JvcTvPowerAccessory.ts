@@ -146,26 +146,26 @@ export class JvcTvPowerAccessory {
     }
   }
 
-  private async onPing(isOnline): Promise<void> {
+  private onPing(isOnline): void {
     if (isOnline && this.state !== TVState.Online) {
       // The device has been turned on
-      this.platform.log.debug('Pinger saw device online; setting to Online.');
-      await this.changeState(TVState.Online);
+      this.platform.log.debug('Pinger saw device online. Setting state to Online.');
+      this.changeState(TVState.Online);
     } else if (!isOnline && this.state !== TVState.Offline) {
       // The device has gone offline
-      this.platform.log.debug('Pinger can\'t see device; setting to Offline.');
-      await this.changeState(TVState.Offline);
+      this.platform.log.debug('Pinger stopped seeing device. Settings state to Offline.');
+      this.changeState(TVState.Offline);
     }
   }
 
-  private async changeState(state: TVState): Promise<void> {
+  private changeState(state: TVState): void {
     // Debouncing - only react to a change if it has actually changed
     if (state !== this.state) {
       this.platform.log.info('Device is %s', TVState[state]);
       this.state = state;
 
       // Trigger change in homebridge
-      await this.getOn();
+      this.service.updateCharacteristic(this.platform.Characteristic.On, state === TVState.Online);
     }
   }
 }
