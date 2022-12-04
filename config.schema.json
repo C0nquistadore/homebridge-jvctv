@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "HomebridgeJVCTV",
+  "pluginAlias": "JVCTV",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,34 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "HomebridgeJVCTV"
+        "default": "JVCTV"
+      },
+      "devices": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "title": "IP address",
+            "type": "string",
+            "required": true
+          },
+          "mac": {
+            "title": "MAC address",
+            "type": "string",
+            "required": true
+          },
+          "pingInterval": {
+            "title": "Ping interval",
+            "type": "number",
+            "required": true,
+            "default": 2000
+          },
+          "timeout": {
+            "title": "Timeout",
+            "type": "number",
+            "required": true,
+            "default": 1000
+          }
+        }
       }
     }
   }

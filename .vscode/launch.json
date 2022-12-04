@@ -5,7 +5,10 @@
             "name": "Debug",
             "type": "node",
             "request": "launch",
-            "program": "/usr/local/share/npm-global/bin/homebridge",
+            // Debian Docker
+            //"program": "/usr/local/share/npm-global/bin/homebridge",
+            // macOS
+            "program": "/usr/local/bin/homebridge",
             "args": "-D",
             "preLaunchTask": "build",
             "skipFiles": [

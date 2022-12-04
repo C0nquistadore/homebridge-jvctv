@@ -1,11 +1,11 @@
 import { API } from 'homebridge';
 
 import { PLATFORM_NAME } from './settings';
-import { HomebridgeJvcTvPlatform } from './platform';
+import { JvcTvPlatform } from './JvcTvPlatform';
 
 /**
  * This method registers the platform with Homebridge
  */
 export = (api: API) => {
-  api.registerPlatform(PLATFORM_NAME, HomebridgeJvcTvPlatform);
+  api.registerPlatform(PLATFORM_NAME, JvcTvPlatform);
 };
