@@ -1,6 +1,6 @@
 {
   "private": true,
-  "displayName": "Homebridge JVCTV",
+  "displayName": "Homebridge JVC TV",
   "name": "homebridge-jvctv",
   "version": "1.0.0",
   "description": "A short description about what your plugin does.",
