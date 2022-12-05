@@ -31,7 +31,7 @@ export class JvcTvPlatform implements DynamicPlatformPlugin {
     public readonly api: API,
   ) {
 
-    this.devices = (<Array<IConfiguration>>platformConfig.devices).map(device => ({ ...this.defaultConfig, ...device })) || [];
+    this.devices = (<Array<IConfiguration>>platformConfig.devices || []).map(device => ({ ...this.defaultConfig, ...device }));
     this.log.debug('Finished initializing platform:', this.platformConfig.name ?? this.platformConfig.platform);
 
     // When this event is fired it means Homebridge has restored all cached accessories from disk.
