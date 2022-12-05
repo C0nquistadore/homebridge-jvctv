@@ -23,18 +23,6 @@
             "title": "MAC address",
             "type": "string",
             "required": true
-          },
-          "pingInterval": {
-            "title": "Ping interval",
-            "type": "number",
-            "required": true,
-            "default": 2000
-          },
-          "timeout": {
-            "title": "Timeout",
-            "type": "number",
-            "required": true,
-            "default": 1000
           }
         }
       }

@@ -15,8 +15,6 @@ export class JvcTvPlatform implements DynamicPlatformPlugin {
     name: '',
     ip: '',
     mac: '',
-    pingInterval: 2000,
-    timeout: 1000,
   };
 
   public readonly Service: typeof Service = this.api.hap.Service;

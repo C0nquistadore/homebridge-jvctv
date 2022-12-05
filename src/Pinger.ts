@@ -24,7 +24,6 @@ export class Pinger {
   }
 
   public start(): void {
-    this.stop();
     this.logger.debug('Starting pinger at an interval of %d milliseconds', Pinger.IntervalInMilliseconds);
     this.timer = setInterval(this.ping.bind(this), Pinger.IntervalInMilliseconds);
     this.pingCallback = this.callback;
@@ -32,7 +31,7 @@ export class Pinger {
     this.pingImmediate();
   }
 
-  private stop(): void {
+  public stop(): void {
     this.logger.debug('Stopping pinger');
     if (this.timer) {
       clearInterval(this.timer);
