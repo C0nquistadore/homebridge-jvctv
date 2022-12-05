@@ -1,9 +1,8 @@
 {
-  "private": true,
   "displayName": "Homebridge JVC TV",
   "name": "homebridge-jvctv",
   "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "description": "Integrate JVC Smart TV within homebridge to control it via homekit",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
