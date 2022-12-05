@@ -12,17 +12,21 @@
         "default": "JVCTV"
       },
       "devices": {
-        "type": "object",
-        "properties": {
-          "ip": {
-            "title": "IP address",
-            "type": "string",
-            "required": true
-          },
-          "mac": {
-            "title": "MAC address",
-            "type": "string",
-            "required": true
+        "title": "Devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ip": {
+              "title": "IP address",
+              "type": "string",
+              "required": true
+            },
+            "mac": {
+              "title": "MAC address",
+              "type": "string",
+              "required": true
+            }
           }
         }
       }

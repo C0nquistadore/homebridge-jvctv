@@ -126,6 +126,9 @@ web_modules/
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# VSCode devcontainer
+.devcontainer
+
 # yarn v2
 
 .yarn/cache
