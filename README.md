@@ -4,7 +4,7 @@
 
 # Homebridge JVC TV
 
-![npm](https://img.shields.io/npm/v/homebridge-jvctv?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/homebridge-jvctv?style=for-the-badge)](https://www.npmjs.com/package/homebridge-jvctv)
 
 I created this plugin out of the private need, to turn my JVC TV on/off. I am using the model 'JVC LT-32V45LFC' which apparently offers a SmartCenter app to accept HTTP requests.
 
