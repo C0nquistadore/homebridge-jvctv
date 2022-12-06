@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge JVC TV",
   "name": "homebridge-jvctv",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Integrate JVC Smart TV within homebridge to control it via homekit",
   "license": "Apache-2.0",
   "repository": {
@@ -23,7 +23,12 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin",
+    "homebridge",
+    "homekit",
+    "jvc",
+    "jvctv",
+    "remote"
   ],
   "dependencies": {},
   "devDependencies": {
