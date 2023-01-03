@@ -28,7 +28,6 @@ export class JvcTvPlatform implements DynamicPlatformPlugin {
     public readonly platformConfig: PlatformConfig,
     public readonly api: API,
   ) {
-
     this.devices = (<Array<IConfiguration>>platformConfig.devices || []).map(device => ({ ...this.defaultConfig, ...device }));
     this.log.debug('Finished initializing platform:', this.platformConfig.name ?? this.platformConfig.platform);
 
@@ -47,7 +46,7 @@ export class JvcTvPlatform implements DynamicPlatformPlugin {
    * This function is invoked when homebridge restores cached accessories from disk at startup.
    * It should be used to setup event handlers for characteristics and update respective values.
    */
-  configureAccessory(accessory: PlatformAccessory) {
+  public configureAccessory(accessory: PlatformAccessory): void {
     this.log.info('Loading accessory from cache:', accessory.displayName);
 
     // add the restored accessory to the accessories cache so we can track if it has already been registered

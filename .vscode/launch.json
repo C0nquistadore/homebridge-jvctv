@@ -1,21 +1,21 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug",
-            "type": "node",
-            "request": "launch",
-            // Debian Docker
-            "program": "/usr/local/share/npm-global/bin/homebridge",
-            // macOS
-            "osx": {
-                "program": "/usr/local/bin/homebridge"
-            },
-            "args": "-D",
-            "preLaunchTask": "build",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "node",
+      "request": "launch",
+      // Debian Docker
+      "program": "/usr/local/share/npm-global/bin/homebridge",
+      // macOS
+      "osx": {
+        "program": "/usr/local/bin/homebridge"
+      },
+      "args": "-D",
+      "preLaunchTask": "build",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    }
+  ]
 }
